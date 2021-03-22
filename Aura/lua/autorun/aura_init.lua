@@ -15,7 +15,7 @@ function Aura:DebugPrint(...)
 		if type(v) == "table" then
 			if v.r and v.g and v.b and v.a then
 				col = v
-				continue -- If not continues the loop, the debug will print the table color in string consequently.
+				continue -- If not continue the loop, the debug will print the table color in string consequently.
 			end
 		elseif type(v) == "Entity" then
 			if v:IsPlayer() and IsValid(v) then
